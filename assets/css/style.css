@@ -99,11 +99,43 @@ body {
     border-radius: 4px;
     font-size: 18px;
     font-weight: 600;
-    transition: transform 0.2s, background-color 0.2s;
+    transition: transform 0.5s, background-color 0.5s;
 }
 
 .call-to-action:hover {
     background-color: #1e96fc;
     color: #fff;
     transform: scale(1.05);
+}
+/*FIM DA CONFIGURAÇÃO DO MAIN*/
+/*INICIO DA CONFIGURAÇÃO DA SECTION SOBRE MIM*/
+.about-me {
+    background-color: #ddd;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; 
+    z-index: 5; /* Maior que o z-index das partículas (que é 1) */
+}
+.about-me div {
+    max-width: 70%;
+    padding-right: 40px;
+}
+.about-me img {
+    max-width: 300px;
+    border-radius: 100px;
+}
+.about-me div h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+.about-me div p {
+    text-align: justify;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
