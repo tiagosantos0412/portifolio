@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+}
+
+/* HEADER */
+.nav {
+    background-color: #181818;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 10; /* Garante que o menu fique acima de tudo */
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-list a {
+    color: #ddd;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.nav-list a:hover {
+    color: #fff;
+}
+
+/* MAIN HERO */
+.main {
+    position: relative; /* Pai relativo para as partículas absolutas */
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    overflow: hidden; /* Corta partículas que saírem da área */
+    
+    /* Overlay e Imagem de fundo */
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+                url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container de Partículas */
+#tsparticles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Camada do meio */
+}
+
+/* Conteúdo (Texto e Botão) */
+.content-wrapper {
+    position: relative;
+    z-index: 2; /* Camada da frente */
+    pointer-events: none; /* Mouse ignora o texto e foca nas partículas */
+}
+
+.main h1 {
+    color: #fff;
+    font-size: 54px;
+    line-height: 1.1;
+}
+
+.main p {
+    font-size: 24px;
+    font-style: italic;
+    color: #1e96fc;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+/* Botão */
+.call-to-action {
+    pointer-events: all; /* Reativa o clique para o botão */
+    cursor: pointer;
+    background-color: #fff;
+    border: 0;
+    padding: 14px 28px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.call-to-action:hover {
+    background-color: #1e96fc;
+    color: #fff;
+    transform: scale(1.05);
+}
