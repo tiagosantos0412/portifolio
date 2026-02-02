@@ -148,3 +148,41 @@ header {
     font-weight: 400;
     margin-bottom: 10px;
 }
+.cv-button-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start; /* Alinha à esquerda acompanhando o texto */
+}
+
+.btn-cv {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 32px;
+    background-color: transparent;
+    border: 2px solid #1e96fc;
+    color: #181818;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-cv:hover {
+    background-color: #1e96fc;
+    color: #ddd;
+    transform: translateY(-3px); /* Efeito de levante */
+    box-shadow: 0 10px 20px rgba(30, 150, 252, 0.3);
+}
+
+.btn-cv svg {
+    transition: transform 0.3s ease;
+}
+
+.btn-cv:hover svg {
+    color: #ddd;
+    transform: translateY(3px); /* O ícone de seta "quica" para baixo */
+}
