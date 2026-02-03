@@ -282,6 +282,56 @@ header {
     text-decoration: underline;
 }
 
+.categoria-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.categoria-header h3 {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.divisor-projetos {
+    margin: 60px 0;
+    border: 0;
+    border-top: 1px solid #333;
+    width: 100%;
+}
+
+/* Container para as imagens de WordPress */
+.img-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Efeito de zoom na imagem ao passar o mouse */
+.projeto-card:hover .img-container img {
+    transform: scale(1.1);
+}
+
+/* Espaçamento extra para separar as seções de QA e WordPress */
+.wordpress-section {
+    margin-top: 60px;
+    border-top: 1px solid #333;
+    padding-top: 60px;
+}
+
+
 /* ESTRUTURA DO MODAL (TELA CHEIA) */
 .modal {
     display: none; /* Controlado pelo JS */
@@ -329,5 +379,49 @@ header {
     }
     .projetos-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/*INICIO FOOTER*/
+footer {
+    background-color: #181818;
+    color: #fff;
+    padding: 40px 10%;
+    border-top: 2px solid #1e96fc;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #ddd;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #1e96fc;
+}
+
+.whatsapp-link {
+    color: #25d366 !important; /* Verde do WhatsApp */
+}
+
+/* Ajuste para telas pequenas */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
     }
 }

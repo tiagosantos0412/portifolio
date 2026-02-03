@@ -25,7 +25,7 @@
 
             <div class="content-wrapper">
                 <h1>Olá,<br>Seja bem vindo</h1>
-                <p>Crie soluções para o seu negócio!</p>
+                <p>Este é o meu portifólio</p>
                 <a href="#projetos">
                     <button class="call-to-action">
                         Veja meus projetos 👇
@@ -74,7 +74,11 @@
         <!--FIM SOBRE MIM-->
         <!--INICIO PROJETOS-->
         <section id="projetos">
-            <h2>Projetos & Automações</h2>
+            <h2>Meus Projetos</h2>
+            <div class="categoria-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1e96fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                <h3>Automação de Testes & QA</h3>
+            </div>
             <div class="projetos-grid">
                 <div class="projeto-card">
                     <div class="video-container">
@@ -130,13 +134,79 @@
                         <a href="https://github.com/tiagosantos0412/exercicio_cypress_heroes"  target="_blank" class="repo-link">Ver Código</a>
                     </div>
                 </div>
+            </div>
+            <div class="categoria-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1e96fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                <h3>Desenvolvimento Web & CMS</h3>
+            </div>
+            <div class="projetos-grid wordpress-section">
+                <div class="projeto-card">
+                    <div class="img-container">
+                        <img src="assets/img/goattransfer.png" alt="Site WordPress 1">
+                        <div class="video-overlay">
+                            <a href="https://www.goattransfer.com/" target="_blank" class="btn-expandir">Visitar Site ↗</a>
+                        </div>
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Landing Page Corporativa</h3>
+                        <p>Desenvolvimento em WordPress com foco em performance e design responsivo.</p>
+                        <div class="tags">
+                            <span>WordPress</span>
+                            <span>Elementor</span>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="projeto-card">
+                    <div class="img-container">
+                        <img src="assets/img/cyberpunk.png" alt="Site WordPress 2">
+                        <div class="video-overlay">
+                            <a href="https://tiagosantos0412.github.io/tarot-cyberpubk-2077/" target="_blank" class="btn-expandir">Visitar Site ↗</a>
+                        </div>
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Tarot Cyberpunk 2077</h3>
+                        <p>Referência das cartas de tarot localizadas no jogo.</p>
+                        <div class="tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <div class="img-container">
+                        <img src="assets/img/pokedex.png" alt="Site WordPress 3">
+                        <div class="video-overlay">
+                            <a href="https://tiagosantos0412.github.io/pokedex1.0/" target="_blank" class="btn-expandir">Visitar Site ↗</a>
+                        </div>
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Pokedex 1.0</h3>
+                        <p>Projeto que utilizo uma api externa para selecionar os pokemons.</p>
+                        <div class="tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!--FIM PROJETOS-->
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <!--INICIO FOOTER-->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Tiago Felipe dos Santos. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/tiago-felipe-dos-santos-55938b27b/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/tiagosantos0412" target="_blank">GitHub</a>
+                <a href="https://api.whatsapp.com/send/?phone=5511958884895&text=Gostaria+de+entrar+em+contato+com+você.&type=phone_number&app_absent=0" target="_blank" class="whatsapp-link">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+    <!--FIM FOOTER-->
+    
     <div id="videoModal" class="modal">
         <span class="modal-close">&times;</span>
         <div class="modal-content">
@@ -145,5 +215,8 @@
             </video>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
