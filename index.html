@@ -73,10 +73,77 @@
         </section>
         <!--FIM SOBRE MIM-->
         <!--INICIO PROJETOS-->
-        
+        <section id="projetos">
+            <h2>Projetos & Automações</h2>
+            <div class="projetos-grid">
+                <div class="projeto-card">
+                    <div class="video-container">
+                        <video muted playsinline class="projeto-video" poster="assets/img/thumb1.jpg">
+                            <source src="assets/video/Projeto: Transferência de Dinheiro.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeos.
+                        </video>
+                        <div class="video-overlay">
+                            <button class="btn-expandir">Ver em tela cheia ⛶</button>
+                        </div>
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Projeto: Real World App</h3>
+                        <p>Definição de casos de teste cobrindo cenários de pagamento e solicitação de dinheiro.</p>
+                        <div class="tags">
+                            <span>Cypress</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://github.com/tiagosantos0412/exercicios-automacao-frontend-cypress" target="_blank" class="repo-link">Ver Código</a>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <div class="video-container">
+                        <video muted playsinline class="projeto-video">
+                            <source src="assets/video/orange rm.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-overlay">
+                            <button class="btn-expandir">Ver em tela cheia ⛶</button>
+                        </div>
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Testes E2E Orange HRM</h3>
+                        <p>Automação da feature de teste de login e alterações de usuário.</p>
+                        <div class="tags"><span>Cypress</span><span>JavaScript</span></div>
+                        <a href="https://github.com/tiagosantos0412/testes-automatizados-com-cypress/tree/main" target="_blank" class="repo-link">Ver Código</a>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <div class="video-container">
+                        <video muted playsinline class="projeto-video">
+                            <source src="assets/video/Projeto Cypress Heroes.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-overlay">
+                            <button class="btn-expandir">Ver em tela cheia ⛶</button>
+                        </div>
+                    </div>
+                    <div class="projeto-info">
+                        <h3>Projeto Cypress Heroes</h3>
+                        <p>Testes automatizados cobrindo cenários de login, interação e administração.</p>
+                        <div class="tags"><span>Cypress</span><span>JavaScript</span></div>
+                        <a href="https://github.com/tiagosantos0412/exercicio_cypress_heroes"  target="_blank" class="repo-link">Ver Código</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
         <!--FIM PROJETOS-->
     </main>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <div id="videoModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <div class="modal-content">
+            <video id="modalVideo" controls>
+                <source src="" type="video/mp4">
+            </video>
+        </div>
+    </div>
 </body>
 </html>
