@@ -129,7 +129,10 @@ header {
     position: relative; 
     z-index: 5;
 }
-
+.about-me h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 .about-me div {
     max-width: 70%;
     padding-right: 40px;
@@ -174,6 +177,10 @@ header {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(30, 150, 252, 0.3);
 }
+.experience li{
+    margin-left: 50px;
+}
+/*FIM DA SESSÃO DE SOBRE MIM*/
 
 /* SECTION PROJETOS */
 #projetos {
